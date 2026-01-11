@@ -32,7 +32,7 @@ void HelloTriangleApplication::mainLoop()
 
 void HelloTriangleApplication::cleanup()
 {
-	vkDestroyAccelerationStructureKHR(instance, nullptr);
+	vkDestroyInstance(instance, nullptr);
 	
 	glfwDestroyWindow(window);
 
