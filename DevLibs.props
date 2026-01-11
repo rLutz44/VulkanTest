@@ -7,6 +7,9 @@
     <ClCompile>
       <AdditionalIncludeDirectories>C:\dev\libs\glfw-3.4\include;C:\dev\libs\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\dev\libs\glfw-3.4\build\src\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>
