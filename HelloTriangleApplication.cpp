@@ -41,6 +41,11 @@ void HelloTriangleApplication::cleanup()
 
 void HelloTriangleApplication::createInstance()
 {
+
+	if (enableValidationLayers && !checkValidationLayerSupport()) {
+		throw std::runtime_error("validation layers requested, but not available!");
+	}
+
 	VkApplicationInfo appInfo{};
 	appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
 	appInfo.pApplicationName = "Hello Triangle";
@@ -52,6 +57,18 @@ void HelloTriangleApplication::createInstance()
 	VkInstanceCreateInfo createInfo{};
 	createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
 	createInfo.pApplicationInfo = &appInfo;
+
+	if (enableValidationLayers) {
+		// Wie viele Layer? (Größe des Vektors)
+		createInfo.enabledLayerCount = static_cast<uint32_t>(validationLayers.size());
+
+		// Wo liegen die Namen? 
+		// .data() gibt Vulkan den Pointer auf den Anfang deines Vektors
+		createInfo.ppEnabledLayerNames = validationLayers.data();
+	}
+	else {
+		createInfo.enabledLayerCount = 0;
+	}
 
 	uint32_t glfwExtensionCount = 0;
 	const char** glfwExtensions;
