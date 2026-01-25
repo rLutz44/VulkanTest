@@ -5,6 +5,8 @@
 #include "global.h"
 #include <iostream>
 
+
+
 class HelloTriangleApplication
 {
 	public:
@@ -16,8 +18,10 @@ class HelloTriangleApplication
 		void mainLoop();
 		void cleanup();
 		void createInstance();
-		
+		void setupDebugMessenger();
+
 		VkInstance instance;
+		VkDebugUtilsMessengerEXT debugMessenger;
 
 		GLFWwindow* window;
 };
