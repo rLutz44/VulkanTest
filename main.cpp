@@ -6,6 +6,7 @@
 
 
 int main() {
+	std::cout << "Vulkan Hello Triangle\n" << std::endl;
     HelloTriangleApplication app;
 
     try {

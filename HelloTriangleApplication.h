@@ -19,6 +19,7 @@ class HelloTriangleApplication
 		void cleanup();
 		void createInstance();
 		void setupDebugMessenger();
+		void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo);
 
 		VkInstance instance;
 		VkDebugUtilsMessengerEXT debugMessenger;

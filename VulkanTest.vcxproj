@@ -109,7 +109,7 @@
       <AdditionalIncludeDirectories>C:\dev\libs\glm;C:\VulkanSDK\1.4.335.0\Include;C:\dev\libs\glfw-3.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;
 vulkan-1.lib
@@ -129,7 +129,7 @@ vulkan-1.lib
       <AdditionalIncludeDirectories>C:\dev\libs\glm;C:\VulkanSDK\1.4.335.0\Include;C:\dev\libs\glfw-3.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\VulkanSDK\1.4.335.0\Lib;C:\dev\libs\glfw-3.4\build\src\Release;C:\dev\libs\glfw-3.4\build\src\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;
