@@ -5,8 +5,6 @@
 #include "global.h"
 #include <iostream>
 
-
-
 class HelloTriangleApplication
 {
 	public:
@@ -20,6 +18,9 @@ class HelloTriangleApplication
 		void createInstance();
 		void setupDebugMessenger();
 		void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo);
+		bool isDeviceSuitable(VkPhysicalDevice device); // Fix: return type should be bool
+
+		void pickPyhsicalDevice();
 
 		VkInstance instance;
 		VkDebugUtilsMessengerEXT debugMessenger;
