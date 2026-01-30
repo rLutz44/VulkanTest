@@ -30,11 +30,13 @@ class HelloTriangleApplication
 		void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo);
 		bool isDeviceSuitable(VkPhysicalDevice device); 
 		QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device);
+		void createLogicalDevice();
 
 		void pickPyhsicalDevice();
 
 		VkInstance instance;
 		VkDebugUtilsMessengerEXT debugMessenger;
+		VkDevice device;
 
 		GLFWwindow* window;
 };

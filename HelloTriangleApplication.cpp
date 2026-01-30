@@ -24,6 +24,7 @@ void HelloTriangleApplication::initVulkan()
 	createInstance();
 	setupDebugMessenger();
 	pickPyhsicalDevice();
+	createLogicalDevice();
 }
 
 bool HelloTriangleApplication::isDeviceSuitable(VkPhysicalDevice device) {
@@ -56,6 +57,11 @@ QueueFamilyIndices HelloTriangleApplication::findQueueFamilies(VkPhysicalDevice 
 	}
 
 	return indices;
+}
+
+void HelloTriangleApplication::createLogicalDevice()
+{
+
 }
 
 void HelloTriangleApplication::pickPyhsicalDevice() {
