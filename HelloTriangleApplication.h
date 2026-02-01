@@ -38,6 +38,7 @@ class HelloTriangleApplication
 		VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
 		VkDebugUtilsMessengerEXT debugMessenger;
 		VkDevice device;
+		VkQueue graphicsQueue;
 
 		GLFWwindow* window;
 };
