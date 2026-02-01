@@ -35,6 +35,7 @@ class HelloTriangleApplication
 		void pickPyhsicalDevice();
 
 		VkInstance instance;
+		VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
 		VkDebugUtilsMessengerEXT debugMessenger;
 		VkDevice device;
 
