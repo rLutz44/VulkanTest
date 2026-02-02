@@ -31,9 +31,11 @@ class HelloTriangleApplication
 		bool isDeviceSuitable(VkPhysicalDevice device); 
 		QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device);
 		void createLogicalDevice();
+		void createSurface();
 
 		void pickPyhsicalDevice();
 
+		VkSurfaceKHR surface;
 		VkInstance instance;
 		VkPhysicalDevice physicalDevice = VK_NULL_HANDLE;
 		VkDebugUtilsMessengerEXT debugMessenger;
